@@ -12,4 +12,5 @@ int nbreItems(int index) {
               count ++;
             }
          }
-      }
+         return cout;
+}

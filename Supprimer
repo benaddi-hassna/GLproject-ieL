@@ -1,0 +1,15 @@
+ void Supprimer(int k) {
+         int h = HashFunc(k);
+         while (t[h] != NULL) {
+            if (t[h]->k == k)
+               break;
+            h = HashFunc(h + 1);
+         }
+         if (t[h] == NULL) {
+            cout<<"pas d'élément trouver "<<k<<endl;
+            return;
+         } else {
+            delete t[h];
+         }
+         cout<<"element supprimer"<<endl;
+      }
